@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shop bruidsjurken gemaakt van toiletpapier</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:ital@1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="menu">
+        <a href="index.html"><img src="logo.png" alt="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collectie.html">Collectie</a></li>
+                <li><a href="winkel.html">Winkel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="heading">Wil jij ook een bruidsjurk van toiletpapier? Maak dan zo snel mogelijk een afspraak!</h2>
+        <form name="contact" method="POST" data-netlify="true">
+            <div class="form-row">
+                <label for="name">Naam:</label>
+                <input type="text" placeholder="Vul hier je naam in" name="name" />
+            </div>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Vul hier je emailadres in" name="email" />
+            </div>
+            <div class="form-row">
+                <label for="tel">Telefoon:</label>
+                <input type="tel" placeholder="Vul je telefoonnummer in" name="tel" />
+            </div>
+            <div class="form-row">
+                <label for="date">Trouwdatum:</label>
+                <input type="date" placeholder="Vul je trouwdatum in" name="date" />
+            </div>
+            <div class="form-row">
+                <div>Voorkeur toiletpapier:</div>
+                <div>
+                    <label for="checkbox">met patroon<input type="checkbox" value="met patroon"
+                            name="checkbox" /></label>
+                    <label for="checkbox">geparfumeerd<input type="checkbox" value="geparfumeerd"
+                            name="checkbox" /></label>
+                    <label for="checkbox">gerecycled<input type="checkbox" value="gerecyceld" name="checkbox" /></label>
+                    <label for="checkbox">krant<input type="checkbox" value="krant" name="checkbox" /></label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div>Propper of vouwer?</div>
+                <div>
+                    <label for="propofvouw">
+                        Propper
+                        <input type="radio" name="propofvouw" value="propper" />
+                    </label>
+                    <label for="propofvouw">
+                        Vouwer
+                        <input type="radio" name="propofvouw" value="vouwer" />
+                    </label>
+                </div>
+            </div>
+            <div class="form-row">
+                <label for="notes">Vul hier je wensen in:</label>
+                <textarea rows="10" cols="30" name="notes" placeholder="Nog wensen?"></textarea>
+            </div>
+            <div class="form-row">
+                <label for="file">Upload een foto van jezelf:</label>
+                <input type="file" name="file" />
+            </div>
+            <div class="form-row">
+                <input class="overons" name="submit" type="submit" value="Verzenden" />
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <p>copyright 2020</p>
+    </footer>
+</body>
+
+</html>

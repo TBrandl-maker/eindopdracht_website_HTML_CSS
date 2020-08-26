@@ -1,0 +1,163 @@
+body {
+   height:100vh; 
+   margin:0;
+   padding:0; 
+   font-family: 'Dancing Script', cursive;
+   background-color: #F7F1E5;
+}
+
+.heading {
+    text-align: center; 
+}
+
+.menu {
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+nav {
+    background-color:#E9CCBE;
+    padding:10px;
+    color:#17161E; 
+}
+
+nav li {
+    display:inline;
+    padding:10px;
+    font-size: 1.2rem; 
+}
+
+a {
+    text-decoration: none; 
+    color:#17161E;
+}
+
+.appointment {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    background: url("wedding-dress.jpg") no-repeat center; 
+    background-color: #E9CCBE;
+    height: 600px;
+    background-size: cover;
+    font-size: 1.6rem;
+}
+
+.leesmeer {
+    background-color: #E9CCBE;
+    padding: 10px;
+    display:inline-block;
+    font-size:1.6rem;
+    color:#17161E; 
+    border-radius:10px;
+    border: 5px double #977C70;
+}
+
+.overons {
+    border: 5px double #977C70;
+    margin:30px;
+    padding:10px;
+    box-sizing:border-box;
+    text-align: center;    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 55px auto 55px; 
+    grid-template-areas: 
+    "i"
+    "h" 
+    "c"
+    "b"; 
+}
+
+.overons img {
+   border-radius: 10px;
+   grid-area: i;
+   justify-self: center;
+}
+
+.overons .content {
+    grid-area: c;
+    font-size: 1.5em;
+    font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+.overons .leesmeer {
+    grid-area: b; 
+}
+
+.overons .title {
+    grid-area: h;
+    font-size: 2em;
+}
+
+footer {
+    background-color:#E9CCBE;
+    padding:10px;
+    color:#17161E; 
+    text-align:center; 
+}
+
+.collectie {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "article" ;
+    justify-items: center;
+    
+    
+}
+
+.collectie article {
+    border: 5px double #977C70;
+    padding: 10px;
+    margin: 10px; 
+    text-align: center; 
+}
+
+.collectie img {
+    border-radius:10px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.winkel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.winkel .adres {
+    align-items:center;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1024px) {
+    .overons {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 55px auto 55px; 
+        grid-template-areas: 
+        "h i" 
+        "c i"
+        "b i";
+    }
+
+    .collectie {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "article article article" ;
+    }
+
+    .form-row {
+        flex-direction: row; 
+    }
+}
+
